@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container clearfix">
+            <div class="index-logo">
+                <a href="../main_nerds/index.html"><img src="img/logoNerds.png" width="155" height="65" alt="Нёрдс"></a>
+            </div>
+            <nav class="main-navigator">
+                <ul>
+                    <li>
+                        <a href="../main_nerds/index.html">Студия</a>
+                    </li>
+                    <li>
+                        <a href="#">Клиенты</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Магазин</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="cart">
+                <a class="basket" href="#">Корзина</a>
+            </div>
+        </div>
+        <div class="title-head">Добро пожаловать в магазин готовых макетов</div>
+    </header>
+    <main class="content container">
+        <div class="row clearfix">
+            <div class="leftcontent">
+                <form action="#" method="post">
+
+                    <div class="range-filter">
+                        <div class="range-controls">
+                            <div class="scale">
+                                <div style="width:70%;" class="bar"></div>
+                            </div>
+                            <div class="toggle min-toggle"></div>
+                            <div class="toggle max-toggle"></div>
+                        </div>
+                        <div class="price-controls">
+                            от
+                            <input name="min-price" class="min-price" type="text" value="0"> до
+                            <input name="max-price" class="max-price" type="text" value="15 000">
+                        </div>
+                    </div>
+                    <fieldset class="grid">
+
+                        <legend>СЕТКA:</legend>
+
+                        <label class="grid-radio">
+                            <input type="radio" name="bob">
+                            <span class="radio-indicator"></span> Адаптивная
+                        </label>
+                        <label class="grid-radio">
+                            <input type="radio" name="bob">
+                            <span class="radio-indicator"></span> Фиксированная
+                        </label>
+                        <label class="grid-radio">
+                            <input type="radio" name="bob">
+                            <span class="radio-indicator"></span> Резиновая
+                        </label>
+
+                    </fieldset>
+                    <fieldset class="features">
+                        <legend>ОСОБЕННОСТИ:</legend>
+                        <label class="features-checkbox">
+                            <input type="checkbox" name="bab">
+                            <span class="checkbox-indicator"></span> Слайдер
+                        </label>
+
+                        <label class="features-checkbox">
+                            <input type="checkbox" name="bab">
+                            <span class="checkbox-indicator"></span> Блок преимуществ
+                        </label>
+
+                        <label class="features-checkbox">
+                            <input type="checkbox" name="bab">
+                            <span class="checkbox-indicator"></span> Новости
+                        </label>
+
+                        <label class="features-checkbox">
+                            <input type="checkbox" name="bab">
+                            <span class="checkbox-indicator"></span> Галерея
+                        </label>
+
+                        <label class="features-checkbox">
+                            <input type="checkbox" name="bab">
+                            <span class="checkbox-indicator"></span> Корзина
+                        </label>
+                    </fieldset>
+                    <div class="show">
+                        <a href="#" class="btn">Показать</a>
+                    </div>
+                </form>
+            </div>
+            <div class="contentright">
+                <div class="controlright">
+                    <ul>
+                        <li>сортировать:</li>
+                        <li><a class="control-active" href="#">по цене</a></li>
+                        <li>
+                            <a class="control-active" href="#">по типу</a></li>
+                        <li><a class="control-active" href="#">по функционалу</a></li>
+                    </ul>
+                    <div class="control">
+                        <div class="triangle-down"></div>
+                        <div class="triangle-up"></div>
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="block block1">
+                        <div class="head-block">
+                        </div>
+                        <img src="img/Aviator.jpg" width="240" height="240" alt="aviator">
+                        <div class="info info1">
+                            <h3>aviator</h3>
+                            <p>Одностраничный макет с авторским дизайном</p>
+                            <a class="btn btn-info">8000 Р.</a>
+                        </div>
+                    </div>
+                    <div class="block block2">
+                        <div class="head-block">
+                        </div>
+                        <img src="img/sunset.jpg" width="240" height="240" alt="sunset">
+                        <div class="info info2">
+                            <div class="title-info">sunset</div>
+                            <p>Интернет-магазин с личным кабинетом</p>
+                            <a class="btn btn-info">10000 Р.</a>
+                        </div>
+                    </div>
+                    <div class="block block3">
+                        <div class="head-block">
+                        </div>
+                        <img src="img/forte.jpg" width="240" height="240" alt="forte">
+                        <div class="info info3">
+                            <h3>forte</h3>
+                            <p>Отличный макет для личного блога</p>
+                            <a class="btn btn-info">5000 Р.</a>
+                        </div>
+                    </div>
+                    <div class="block block4">
+                        <div class="head-block">
+                        </div>
+                        <img src="img/modern%20organic.jpg" width="240" height="240" alt="modern organic">
+                        <div class="info info4">
+                            <h3>modern organic thai</h3>
+                            <p>Сайт для ресторана быстрого питания</p>
+                            <a class="btn btn-info">12000 Р.</a>
+                        </div>
+                    </div>
+                    <div class="block block5">
+                        <div class="head-block">
+                        </div>
+                        <img src="img/avenue.jpg" width="239" height="240" alt="avenue">
+                        <div class="info info5">
+                            <h3>avenue</h3>
+                            <p>Макет для блога о путешествиях</p>
+                            <a class="btn btn-info">8000 Р.</a>
+                        </div>
+                    </div>
+                    <div class="block block6">
+                        <div class="head-block">
+                        </div>
+                        <img src="img/dovetail.jpg" width="239" height="240" alt="dovetail">
+                        <div class="info info6">
+                            <h3>dovetail</h3>
+                            <p>Интеренет-магазин с галереей товаров</p>
+                            <a class="btn btn-info">14000 Р.</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="page">
+                    <ul>
+                        <li><a class="active-page" href="#">1</a></li>
+                        <li><a href="#" class="next-page">2</a></li>
+                        <li><a href="#" class="next-page">3</a></li>
+                        <li><a class="next-page" href="#">следующая</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    <div class="map" id="yandex-map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=ugAPZ054OYHcukS9yoNFJvGeZW0RYS7E&width=100%&height=415&lang=ru_RU&sourceType=constructor&scroll=true"></script>
+
+        <div class="address">
+            <p>NЁRDS DESIGN STUDIO</p>
+            <div class="content-addres">191186, Санкт-Петербург,
+                <br>ул. Б. Конюшенная, д. 19/8</div>
+            <br>
+            <div class="content-addres">тел. +7(812)2757575</div>
+            <a class="btn-adress btn" href="#">Напишите нам</a>
+        </div>
+    </div>
+    <div class="container footer">
+        <div class="row clearfix">
+            <div class="soc">
+                <ul>
+                    <li>
+                        <a class="social-btn social-btn-vk" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="social-btn social-btn-fb" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="social-btn social-btn-inst" href="#"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="text-footer">
+                <div class="text-title">Давайте дружить,это выгодно!</div>
+                <div class="">скидка 10% для друзей из соц.сетей.</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
