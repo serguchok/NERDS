@@ -1,0 +1,638 @@
+body {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 22px;
+    font-size: 16px;
+    color: #000;
+    padding: 0;
+    margin: 0;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main-header {
+    margin-bottom: 80px;
+    background: #eeeeee;
+}
+
+.index-logo {
+    float: left;
+    margin-top: 30px;
+}
+
+.main-navigator {
+    min-height: 90px;
+}
+
+.main-navigator ul {
+    float: left;
+    margin-left: 170px;
+    padding: 0;
+    list-style: none;
+    margin-top: 50px;
+    font-size: 0;
+}
+
+.main-navigator li {
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.main-navigator a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+.main-navigator .active {
+    position: relative;
+    background-color: none;
+}
+
+.main-navigator .active::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #f3b1b3;
+    bottom: 0;
+    right: 2px;
+    left: 2px;
+}
+
+.main-navigator li a:hover {
+    color: #f87478;
+}
+
+.main-navigator li a:active {
+    color: #d2d2d2;
+}
+
+.cart {
+    width: 110px;
+    float: right;
+    margin-top: 40px
+}
+
+.login {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 30px;
+    vertical-align: top;
+    color: #000000;
+    padding-left: 40px;
+    margin-top: 10px;
+}
+
+.login::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 5px;
+    height: 28px;
+    width: 29px;
+    background: url("../img/.icon-basket.png") no-repeat;
+    background-position: -1px 9px;
+}
+
+.login:hover::before {
+    background: url("../img/.icon-basket_hover.png") no-repeat;
+    background-position: -1px 9px;
+}
+
+.login:hover {
+    color: #f87478;
+}
+
+.slider {
+    position: relative;
+    width: 880px;
+    height: 310px;
+    margin: 0 auto;
+}
+
+.slider-controls {
+    position: absolute;
+    bottom: 95px;
+    left: 50%;
+    width: 200px;
+    height: 10px;
+    margin-left: -100px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.slider-controls i {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin: 0 3px;
+    background: white;
+    border: 3px solid white;
+    vertical-align: top;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider-controls .active {
+    background: #c1c1c1;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+}
+
+.slide-text {
+    font-family: "Roboto", "Arial", sans-serif;
+    width: 380px;
+    padding: 30px 0;
+    color: #283136;
+}
+
+.slide-title {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: bold;
+    color: black;
+}
+
+.slide .btn {
+    display: block;
+    width: 240px;
+    padding: 10px 0;
+    margin-top: 25px;
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    background: #fb565a;
+    border-radius: 3px;
+}
+
+.slide:nth-child(1) {
+    background-image: url("../img/sliders.png");
+    background-repeat: no-repeat;
+    background-position: 100% 10px;
+}
+
+.slide .btn:hover {
+    background: #d6494d;
+}
+
+.slide:nth-child(2) {
+    background-image: url("../img/slide2.png");
+    background-repeat: no-repeat;
+    background-position: 100% 10px;
+}
+
+.slide:nth-child(3) {
+    background-image: url("../img/slide3.png");
+    background-repeat: no-repeat;
+    background-position: 100% 10px;
+}
+
+.slide {
+    display: none;
+}
+
+.slide:nth-child(1) {
+    display: block;
+}
+
+.conteiner {
+    width: 880px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.usl-block {
+    float: left;
+    width: 240px;
+    margin-right: 80px;
+    margin-top: 80px;
+}
+
+.usl-block:last-child {
+    margin-right: 0px;
+}
+
+.btn {
+    display: block;
+    width: 140px;
+    padding: 10px 0;
+    margin-top: 25px;
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    background: #fb565a;
+    border-radius: 3px;
+}
+
+.usl-block-title {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.btn-yellow a {
+    background-color: #efc84a;
+}
+
+.btn-green a {
+    background-color: #00ca74;
+}
+
+.btn-green {
+    position: relative;
+    bottom: -19px;
+}
+
+.btn-red a:hover {
+    background: #d6494d;
+}
+
+.btn-green a:hover {
+    background: #01a25e;
+}
+
+.btn-yellow a:hover {
+    background: #d6ae2c;
+}
+
+.content {
+    margin-top: 50px;
+}
+
+.one-line {
+    margin-bottom: 50px;
+}
+
+.content-left {
+    float: left;
+    width: 590px;
+    margin-right: 25px;
+}
+
+.header-content {
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.preview {
+    list-style: none;
+}
+
+.preview li {
+    position: relative;
+}
+
+.preview li::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 25px;
+    background: #fb565a;
+    top: 10px;
+    left: -35px;
+}
+
+.content-right {
+    float: left;
+    width: 265px;
+}
+
+.logo-content {
+    text-align: center;
+}
+
+.since {
+    text-align: center;
+    margin-top: 13px;
+}
+
+.since p {
+    position: relative;
+    font-size: 16px;
+    line-height: 9px;
+    background: #fff;
+    display: inline;
+    margin: 0;
+    padding: 0 20px;
+    z-index: 2;
+}
+
+.since::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid #ece9e9;
+    position: relative;
+    top: -10px;
+    z-index: 1;
+}
+
+.sch-content {
+    margin-top: 40px;
+}
+
+hr {
+    border: none;
+    background-color: #ece9e9;
+    height: 2px;
+}
+
+
+/*Рекламмные логотипы*/
+
+.company {
+    margin-top: 40px;
+}
+
+.log {
+    display: inline-block;
+    width: 100px;
+    padding: 50px;
+    margin-right: 80px
+}
+
+.pictures {
+    padding: 40px 230px;
+}
+
+.gluk {
+    background: url(../img/glukhanko.png) no-repeat;
+    background-position: 0px 30px;
+}
+
+.acad {
+    background: url(../img/academy.png) no-repeat;
+    background-position: 10px 17px;
+}
+
+.borod {
+    background: url(../img/borodinski.png) no-repeat;
+    background-position: 10px 9px;
+}
+
+.gluk:hover {
+    background: url(../img/glukhanko_hover.png) no-repeat;
+    background-position: 0px 30px;
+}
+
+.acad:hover {
+    background: url(../img/html_academy_hover.png) no-repeat;
+    background-position: 10px 17px;
+}
+
+.borod:hover {
+    background: url(../img/Borodinski_hover.png) no-repeat;
+    background-position: 10px 9px;
+}
+
+
+/*Рекламмные логотипы конец */
+
+.map {
+    margin-top: 80px;
+    position: relative;
+}
+
+.address {
+    position: absolute;
+    width: 250px;
+    left: 200px;
+    text-align: center;
+    bottom: 120px;
+    padding: 20px 5px;
+    background: #f1f1f1;
+}
+
+.content-addres {
+    color: #b1b1b1;
+}
+
+.btn-adress {
+    margin-left: 25px;
+    width: 200px;
+}
+
+.btn-adress:hover {
+    background: #d6494d;
+}
+
+.footer {
+    margin-top: 75px;
+}
+
+.soc {
+    float: left;
+    width: 275px;
+}
+
+.soc li {
+    display: inline-block;
+    width: 54px;
+    height: 54px;
+    margin-right: 20px;
+    background: #e1e1e1;
+    vertical-align: top;
+    line-height: 54px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.soc li:hover {
+    background-color: #d6494d;
+}
+
+.soc li a {
+    display: block;
+    height: 26px;
+    width: 26px;
+    margin: 14px;
+    background: url("../img/result.png") no-repeat top left;
+}
+
+.soc li:nth-child(1) a {
+    background-position: 0 -56px;
+}
+
+.soc li:nth-child(2) a {
+    background-position: 7px 0px;
+}
+
+.soc li:nth-child(3) a {
+    background-position: 3px -30px;
+}
+
+.text-footer {
+    margin-top: 20px;
+    float: right;
+    width: 555px;
+}
+
+.text-title {
+    font-size: 36px;
+    line-height: 36px;
+}
+
+
+/*Всплывающая форма*/
+
+.modal-content {
+    position: fixed;
+    bottom: 200px;
+    left: 50%;
+    margin-left: -355px;
+    width: 470px;
+    padding: 50px 80px;
+    background-color: #f1f1f1;
+    color: #000;
+    display: none;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(2000px);
+    }
+    70% {
+        transform: translateY(-30px);
+    }
+    90% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(10px);
+    }
+}
+
+.modal-error {
+    animation: shake 0.6s;
+}
+
+.modal-content-show {
+    display: block;
+    animation: bounce 0.6s;
+}
+
+.form-box {}
+
+.modal-content-close {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    border: 0;
+    outline: 0;
+    background-color: #fb565a;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.modal-content-close::before,
+.modal-content-close::after {
+    position: absolute;
+    content: "";
+    top: 17px;
+    left: 6px;
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.modal-content-close::before {
+    transform: rotate(45deg)
+}
+
+.modal-content-close::after {
+    transform: rotate(-45deg)
+}
+
+.user-name-box {
+    float: left;
+}
+
+.user-name-box input,
+.user-mail-box input {
+    display: block;
+    width: 192px;
+    padding: 10px 14px;
+    border: 2px solid #eff1f2;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.user-mail-box {
+    float: right;
+    margin-left:
+}
+
+.text-post-box {
+    float: left;
+    width: 467px;
+    margin-top: 20px;
+}
+
+.text-post-box textarea {
+    display: block;
+    width: 460px;
+    border: 2px solid #eff1f2;
+    resize: none;
+}
+
+textarea::-moz-placeholder {
+    font-size: 12px;
+}
+
+.text-post-box p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.send .btn {
+    float: left;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.post {
+    font-size: 12px;
+    line-height: 18px;
+}
